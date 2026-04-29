@@ -55,7 +55,7 @@ resource "aws_route_table" "public" {
 resource "aws_route_table" "private" {
   vpc_id = aws_vpc.main.id
 
-  tags = { Name = "${var.app_name}-private-rtb" }
+  tags = { Name = "${var.app_name}-private-test" }
 }
 
 resource "aws_route_table_association" "public" {
