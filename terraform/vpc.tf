@@ -49,7 +49,7 @@ resource "aws_route_table" "public" {
     gateway_id = aws_internet_gateway.main.id
   }
 
-  tags = { Name = "${var.app_name}-public-test" }
+  tags = { Name = "${var.app_name}-public-rtb" }
 }
 
 resource "aws_route_table" "private" {
