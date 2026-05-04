@@ -1,4 +1,4 @@
-# ecr.tf
+# ecr.tf d
 resource "aws_ecr_repository" "main" {
   name                 = "quiz-app"
   image_tag_mutability = "MUTABLE"
