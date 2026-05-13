@@ -62,7 +62,7 @@ resource "aws_ecs_task_definition" "app" {
     }
   ])
 }
-
+ 
 resource "aws_ecs_service" "app" {
   name            = "${var.app_name}-service"
   cluster         = aws_ecs_cluster.app.id
